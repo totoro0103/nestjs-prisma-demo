@@ -4,8 +4,8 @@ CREATE TABLE "User" (
     "email" TEXT NOT NULL,
     "name" TEXT NOT NULL,
     "avatar" TEXT,
-    "role" TEXT NOT NULL,
-    "state" TEXT NOT NULL,
+    "role" TEXT NOT NULL DEFAULT '',
+    "state" TEXT NOT NULL DEFAULT '',
     "create_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "update_at" TIMESTAMP(3) NOT NULL,
 

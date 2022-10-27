@@ -16,8 +16,8 @@ model User {
   email String  @unique
   name  String  
   avatar String? 
-  role String 
-  state String
+  role String @default("")
+  state String @default("")
   create_at DateTime @default(now())
   update_at DateTime @updatedAt
   posts Post[]
